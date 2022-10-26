@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1HUoQiRKgwlTfZv44ZT8vrJqtSY9B2sXE
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
-!pip install --quiet tensorflow-text
-!pip install --quiet tokenizers
+# !pip install --quiet tensorflow-text
+# !pip install --quiet tokenizers
 import numpy as np 
 import pandas as pd 
 import pickle
