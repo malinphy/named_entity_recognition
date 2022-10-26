@@ -38,7 +38,7 @@ def prediction(test_sentence):
     ids, type_ids, attention_mask,tokens,ids_len = encoder(test_sentence)
     pad_ids = padder(ids,input_len)
     bert_ner_model = ner_model(9)
-    bert_ner_model.load_weights('drive/MyDrive/Colab Notebooks/trained_models/bert_ner_model/model_weights/bert_ner_weights.h5')
+    bert_ner_model.load_weights('./model_weights/bert_ner_weights.h5')
     p = bert_ner_model.predict(np.array(test_sentence));
 
     pred_args = tf.math.top_k(p[0][0:len(np.where(pad_ids != 0)[1])], k =1)[1]
