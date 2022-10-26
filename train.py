@@ -7,11 +7,11 @@ Original file is located at
     https://colab.research.google.com/drive/1HUoQiRKgwlTfZv44ZT8vrJqtSY9B2sXE
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
+# from google.colab import drive
+# drive.mount('/content/drive')
 
-!pip install --quiet tensorflow-text
-!pip install --quiet tokenizers
+# !pip install --quiet tensorflow-text
+# !pip install --quiet tokenizers
 import numpy as np 
 import pandas as pd 
 import pickle
@@ -39,9 +39,9 @@ from model import ner_model
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-train_path = 'drive/MyDrive/Colab Notebooks/datasets/conn2003/train.txt'
-test_path = 'drive/MyDrive/Colab Notebooks/datasets/conn2003/test.txt'
-validation_path = 'drive/MyDrive/Colab Notebooks/datasets/conn2003/valid.txt'
+train_path  = './data/train.txt'
+test_path = './data/test.txt'
+validation_path = './data/valid.txt'
 
 saving_path = './'
 
