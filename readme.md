@@ -1,20 +1,41 @@
-USAGE
----------------
-REQUIREMENTS
----------------
+# Named Entity Recognition (NER)
+
+Named entity recognition for CoNLL2003 Dataset with BERT.
+
+Data
+----
+Twitter dataset on kaggle : https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis
+
+File Description :
+----
+- data_loader.py : data preparation
+- enc_2tags.pkl and tags_enc.pkl : pickle file of dictionaries for tags and encoded values
+- helper_functions.py : small functions for encoders
+- token_functions.py : token alignment for learning algorithm
+- model.py : nueral network model
+- train.py : training file for learning algorithm
+- prediction.py : prediction file for deployment purpose 
+- bert_ner_weights.h5 : model weights for later usage
+
+Usage :
+if necessary download repo and create an virtual env using following commands 
+----
+download file 
 ```
-python version: 3.7.14
-numpy version: 1.21.6
-pandas version: 1.3.5
-regex version: 2.2.1
-tensorflow version: 2.10.0
-keras version: 2.10.0
-tf_hub version: 0.12.0
-tf_text version: 2.10.0
-tokenizers version: 0.13.0
-sklearn version: 1.0.2
-seaborn version: 0.11.2
+conda create --name exp_env
+conda activate exp_env
 ```
+find the folder directory in exp_env
+```
+pip install -r requirements.txt 
+```
+run ***train.py*** file 
+<br/>
+for deployment purpose prediction file created seperately as ***prediction.py***
+
+
+
+
 EVALUATION
 ---------------
 ###### Classification Report
