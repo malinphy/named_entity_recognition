@@ -1,6 +1,9 @@
 # Named Entity Recognition (NER)
+Overview : This study model is constructed as feed forward neural network on top of pretrained BERT model using Tensorflow/Keras framework.
+Model composed of tokenization layer, BERT layer, dropout layer and a dense layer with softmax activation layer.
+BERT model and tokenizer is downloaded from TF_Hub. 
 
-Named entity recognition for CoNLL2003 Dataset with BERT.
+
 
 Data
 ----
